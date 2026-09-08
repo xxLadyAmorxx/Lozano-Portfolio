@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christyne Love Lozano — Portfolio</title>
+<meta name="description" content="Christyne Love Lozano — Aspiring Full Stack Developer, BSIT student at Philippine Christian University-Manila.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="scene"></canvas>
+<canvas id="sceneLight"></canvas>
+<div id="scene-scrim"></div>
+<div class="grain-bg"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-id">
+      <span class="nav-id-badge">CLL</span>
+      <span class="nav-id-text">
+        <strong>Christyne Love Lozano</strong>
+      </span>
+    </a>
+
+    <nav class="nav-links" data-nav-links>
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="skills.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-right">
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle light and dark mode">
+        <span class="knob">
+          <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+          </svg>
+        </span>
+      </button>
+      <button class="nav-burger" data-nav-burger aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <span class="hero-greet">// Hi, I'm</span>
+      <h1 class="hero-name">Christyne <span class="accent">Love</span> Lozano</h1>
+      <span class="hero-role">Aspiring Full Stack Developer</span>
+      <p class="hero-desc">
+        I'm a 3rd year student taking Bachelor of Science in Information Technology
+        at Philippine Christian University-Manila — learning to build clean, useful
+        software one project at a time.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="assets/lozano_resume.pdf" download>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+          Download Resume
+        </a>
+        <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="id-card-stage">
+      <div class="id-card-float">
+        <div class="id-card" id="idCard" tabindex="0" role="button" aria-label="Interactive student ID card. Drag to rotate, press Enter to flip.">
+          <!-- FRONT -->
+          <div class="id-card-face id-card-front">
+            <div class="id-clip"></div>
+            <div class="id-top">
+              <small>PHILIPPINE CHRISTIAN UNIVERSITY> </small>
+              <h3>STUDENT IDENTIFICATION</h3>
+            </div>
+            <div class="id-photo">
+              <img src="assets/christyne.JPG" alt="Christyne Love Lozano" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <span class="initials" style="display:none;">CLL</span>
+            </div>
+            <div class="id-body">
+              <h4>Christyne Love Lozano</h4>
+              <p>BS Information Technology · 3rd Year</p>
+              <span class="id-tag">ID NO. 202211835 </span>
+            </div>
+            <div class="id-barcode"></div>
+            <div class="id-bottom">
+              <span>VALID A.Y. 2025–2026</span>
+              <span>PCU-MNL</span>
+            </div>
+          </div>
+          <!-- BACK -->
+          <div class="id-card-face id-card-back">
+            <div class="id-back-strip"></div>
+            <div class="id-back-body">
+              <h5>Focus areas</h5>
+              <div class="id-back-list">
+                <span>Full Stack Dev</span>
+                <span>UI / Editing</span>
+                <span>Writing</span>
+              </div>
+              <div class="id-qr" aria-hidden="true">
+                <span class="on"></span><span></span><span class="on"></span><span></span><span class="on"></span><span></span>
+                <span></span><span class="on"></span><span></span><span class="on"></span><span></span><span class="on"></span>
+                <span class="on"></span><span class="on"></span><span></span><span></span><span class="on"></span><span></span>
+                <span></span><span></span><span class="on"></span><span class="on"></span><span></span><span class="on"></span>
+                <span class="on"></span><span></span><span></span><span class="on"></span><span class="on"></span><span></span>
+                <span></span><span class="on"></span><span class="on"></span><span></span><span></span><span class="on"></span>
+              </div>
+              <div class="id-signature">
+                <div class="sig-line"></div>
+                <p>AUTHORIZED SIGNATURE — PORTFOLIO ACCESS BADGE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="id-card-hint">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4M2 12l3 3 3-3"/></svg>
+        Drag to spin the card
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>&copy; 2026 Christyne Love Lozano. Built with HTML, CSS &amp; JavaScript.</p>
+  <p>PCU-Manila · BSIT 2024–2028</p>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/id-card.js"></script>
+
+<!-- ============ 3D STORM BACKGROUND (red / black / white palette) ============ -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.143.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.143.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
+import { GammaCorrectionShader } from 'three/addons/shaders/GammaCorrectionShader.js';
+import { CopyShader } from 'three/addons/shaders/CopyShader.js';
+
+function hexToVec3(hex) {
+  const n = parseInt(hex.slice(1), 16);
+  return new THREE.Vector3(((n >> 16) & 255) / 255, ((n >> 8) & 255) / 255, (n & 255) / 255);
+}
+
+/* ---- Palette: locked to the site's red / black / white ---- */
+const CONFIG = {
+  bgColor: '#0a0a0c',     // --black
+  flameColor: '#d81324',  // --red
+  flameColor2: '#f7f5f1', // --white
+  flameAmt: 0.08,
+  atmoColor: '#ff3b4e',   // --red-glow
+  atmoCount: 300,
+  atmoSize: 16,
+  atmoSpeed: 1.0,
+  coreColor: '#3a060c',   // near-black red core
+  midColor: '#8a0f1b',    // muted red (was full --red)
+  rimColor: '#f7f5f1',    // --white
+  opacity: 1.3,
+  pointSize: 62,
+  brightness: 1.05,
+  spin: 0.03,
+  blowUp: 0,
+  repelRadius: 1.6,
+  repelStrength: 5,       // slightly stronger hover response
+  scrollDive: 3,
+  scrollGrow: 0.5,
+  scrollSpin: 0.6,
+  parallax: 0.7,
+};
+
+const canvas = document.getElementById('scene');
+const LAYERS = { NONE: 0, TORUS_SCENE: 1, BLOOM_SCENE: 2, ENTIRE_SCENE: 3 };
+
+const renderer = new THREE.WebGL1Renderer({ canvas, antialias: true, alpha: true });
+renderer.setPixelRatio(window.devicePixelRatio);
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.VSMShadowMap;
+
+const scene = new THREE.Scene();
+scene.background = null;
+scene.fog = new THREE.Fog(0x000000, 0, 15);
+
+const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 80);
+camera.position.set(0, 0, 7);
+camera.layers.enable(LAYERS.TORUS_SCENE);
+camera.layers.enable(LAYERS.BLOOM_SCENE);
+camera.layers.enable(LAYERS.ENTIRE_SCENE);
+scene.add(camera);
+
+/* ---- Postprocessing ---- */
+const renderScene = new RenderPass(scene, camera);
+
+const torusComposer = new EffectComposer(renderer);
+torusComposer.renderToScreen = false;
+torusComposer.addPass(renderScene);
+torusComposer.addPass(new ShaderPass(GammaCorrectionShader));
+torusComposer.addPass(new UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), 0.17, 0.2, 0));
+torusComposer.addPass(new ShaderPass(CopyShader));
+
+const bloomComposer = new EffectComposer(renderer);
+bloomComposer.renderToScreen = false;
+bloomComposer.addPass(renderScene);
+bloomComposer.addPass(new UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), 0.26, 0.55, 0));
+bloomComposer.addPass(new ShaderPass(GammaCorrectionShader));
+
+const FinalPass = {
+  uniforms: {
+    iTime: { value: 0 },
+    tDiffuse: { value: null }, torusTexture: { value: null }, bloomTexture: { value: null }, haloTexture: { value: null },
+    uBg: { value: hexToVec3(CONFIG.bgColor) },
+    uFlameA: { value: hexToVec3(CONFIG.flameColor) },
+    uFlameB: { value: hexToVec3(CONFIG.flameColor2) },
+    uFlameAmt: { value: CONFIG.flameAmt },
+    uMixStrength: { value: 0 }
+  },
+  vertexShader: `varying vec2 vUv; void main(){ vUv = uv; gl_Position = vec4(position, 1.0); }`,
+  fragmentShader: `
+    uniform float iTime; uniform sampler2D tDiffuse; uniform sampler2D bloomTexture; uniform sampler2D torusTexture; uniform sampler2D haloTexture;
+    uniform vec3 uBg; uniform vec3 uFlameA; uniform vec3 uFlameB; uniform float uFlameAmt; uniform float uMixStrength;
+    varying vec2 vUv;
+    vec3 warp3d(vec3 pos, float t){ float curv=.8,a=1.9,b=0.7; pos*=2.;
+      pos.x+=curv*sin(t+a*pos.y)+t*b; pos.y+=curv*cos(t+a*pos.x);
+      pos.y+=curv*sin(t+a*pos.z)+t*b; pos.z+=curv*cos(t+a*pos.y);
+      pos.z+=curv*sin(t+a*pos.x)+t*b; pos.x+=curv*cos(t+a*pos.z);
+      return 0.5+0.5*cos(pos.xyz+vec3(1,2,4)); }
+    void main(){
+      vec2 uv = 2.*vUv - 1.;
+      vec3 w = pow(warp3d(vec3(uv.x, sin(uv.y), uv.y), iTime*1.5), vec3(1.5));
+      vec3 flame = 1.5*uFlameA*w.x; flame*=w.y; flame += uFlameB*w.z;
+      flame *= smoothstep(0.25, 1., abs(uv.y));
+      float md = smoothstep(-0.7, 1., -uv.y*uv.x); flame *= md*md;
+      vec3 bg = uBg * (1.0 - 0.4 * length(uv));
+      vec3 halo = texture2D(haloTexture, vUv).xyz;
+      vec3 colorSum = flame*uFlameAmt + texture2D(bloomTexture, vUv).xyz + texture2D(torusTexture, vUv).xyz + texture2D(tDiffuse, vUv).xyz + halo;
+      // Pure addition (great on a near-black bg) washes out on a light bg since it can only brighten.
+      // Blend toward a real alpha mix — driven by the color's own luminance — so the storm stays
+      // visibly colored against a light background instead of clipping to white. uMixStrength is
+      // 0 on dark theme (identical to the original look) and raised on light theme.
+      vec3 additive = bg + colorSum;
+      float lum = dot(colorSum, vec3(0.299, 0.587, 0.114));
+      float a = clamp(lum * 2.1, 0.0, 1.0);
+      vec3 blended = mix(bg, colorSum * 1.15, a);
+      vec3 finalColor = mix(additive, blended, uMixStrength);
+      gl_FragColor = vec4(finalColor, 1.);
+    }
+  `
+};
+
+const finalComposer = new EffectComposer(renderer);
+finalComposer.addPass(renderScene);
+const finalPass = new ShaderPass(FinalPass);
+finalPass.uniforms.bloomTexture.value = bloomComposer.renderTarget1.texture;
+finalPass.uniforms.torusTexture.value = torusComposer.renderTarget1.texture;
+finalComposer.addPass(finalPass);
+
+/* ---- Storm point cloud ---- */
+const count = 50000, radius = 2.5;
+const positions = new Float32Array(count * 3);
+const scales = new Float32Array(count);
+const noises = new Float32Array(count);
+const radialPush = new Float32Array(count);
+const mixv = new Float32Array(count);
+for (let i = 0; i < count; i++) {
+  const i3 = i * 3;
+  let u, v, s;
+  do { u = Math.random() * 2 - 1; v = Math.random() * 2 - 1; s = u * u + v * v; } while (s >= 1 || s === 0);
+  const factor = 2 * Math.sqrt(1 - s);
+  const dx = u * factor, dy = v * factor, dz = 1 - 2 * s;
+  const rN = Math.pow(Math.random(), 0.4);
+  const r = radius * (0.55 + rN * 0.45);
+  positions[i3] = dx * r; positions[i3 + 1] = dy * r; positions[i3 + 2] = dz * r;
+  mixv[i] = rN;
+  scales[i] = 0.45 + Math.random() * 0.8;
+  noises[i] = Math.random();
+  radialPush[i] = 0.4 + rN * 1.1;
+}
+
+const geometry = new THREE.BufferGeometry();
+geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+geometry.setAttribute('aScale', new THREE.Float32BufferAttribute(scales, 1));
+geometry.setAttribute('aNoise', new THREE.Float32BufferAttribute(noises, 1));
+geometry.setAttribute('aRadialPush', new THREE.Float32BufferAttribute(radialPush, 1));
+geometry.setAttribute('aMix', new THREE.Float32BufferAttribute(mixv, 1));
+
+const uniforms = {
+  uTime: { value: 0 },
+  uSize: { value: CONFIG.pointSize },
+  uOpacity: { value: 0 },
+  uBlowUp: { value: CONFIG.blowUp },
+  uCursor: { value: new THREE.Vector3() },
+  uRepelRadius: { value: CONFIG.repelRadius },
+  uRepelStrength: { value: CONFIG.repelStrength },
+  uActivity: { value: 0 },
+  uCore: { value: hexToVec3(CONFIG.coreColor) },
+  uMid: { value: hexToVec3(CONFIG.midColor) },
+  uRim: { value: hexToVec3(CONFIG.rimColor) },
+  uBrightness: { value: CONFIG.brightness },
+};
+
+const material = new THREE.ShaderMaterial({
+  transparent: true,
+  depthWrite: false,
+  blending: THREE.AdditiveBlending,
+  uniforms,
+  vertexShader: `
+    uniform float uTime; uniform float uSize; uniform float uBlowUp;
+    uniform vec3 uCursor; uniform float uRepelRadius; uniform float uRepelStrength; uniform float uActivity;
+    uniform vec3 uCore; uniform vec3 uMid; uniform vec3 uRim;
+    attribute float aScale; attribute float aNoise; attribute float aRadialPush; attribute float aMix;
+    varying vec3 vColor; varying float vBlowUp;
+    void main() {
+      vec3 pos = position;
+      float t = uTime * 1.4 + aNoise * 6.2831;
+      float wobble = sin(t) * 0.1 * aRadialPush;
+      pos *= 1.0 + wobble;
+      float swirlAngle = uTime * 0.05 + aNoise * 6.2831;
+      mat2 swirl = mat2(cos(swirlAngle), -sin(swirlAngle), sin(swirlAngle), cos(swirlAngle));
+      pos.xz = swirl * pos.xz;
+      vec3 outward = normalize(pos + vec3(0.0001));
+      float blow = uBlowUp * uBlowUp;
+      pos += outward * blow * (10.0 + aNoise * 18.0) * aRadialPush;
+      vec4 modelPosition = modelMatrix * vec4(pos, 1.0);
+      vec3 toParticle = modelPosition.xyz - uCursor;
+      float dist = length(toParticle);
+      float falloff = smoothstep(uRepelRadius, 0.0, dist);
+      modelPosition.xyz += normalize(toParticle + vec3(0.0001)) * falloff * uRepelStrength * uActivity;
+      vec4 viewPosition = viewMatrix * modelPosition;
+      gl_Position = projectionMatrix * viewPosition;
+      gl_PointSize = uSize * aScale;
+      gl_PointSize *= (1.0 / -viewPosition.z);
+      float t1 = smoothstep(0.25, 0.85, aMix);
+      vec3 mix1 = mix(uCore, uMid, t1);
+      float t2 = clamp((aMix - 0.7) * 3.0, 0.0, 1.0);
+      vColor = mix(mix1, uRim, t2);
+      vBlowUp = uBlowUp;
+    }
+  `,
+  fragmentShader: `
+    uniform float uOpacity; uniform float uBrightness;
+    varying vec3 vColor; varying float vBlowUp;
+    void main() {
+      vec2 uv = gl_PointCoord - 0.5;
+      float d = length(uv);
+      if (d > 0.5) discard;
+      float strength = pow(1.0 - d * 2.0, 4.5);
+      vec3 color = mix(vec3(0.0), vColor, strength);
+      float blowFade = 1.0 - smoothstep(0.15, 1.0, vBlowUp);
+      gl_FragColor = vec4(color * uBrightness, strength * uOpacity * blowFade);
+    }
+  `
+});
+
+const points = new THREE.Points(geometry, material);
+points.layers.enable(LAYERS.ENTIRE_SCENE);
+const group = new THREE.Group();
+group.add(points);
+scene.add(group);
+
+/* ---- Ambient atmosphere motes ---- */
+const N = Math.round(CONFIG.atmoCount);
+const atmoPos = new Float32Array(N * 3), atmoSizes = new Float32Array(N), atmoSeeds = new Float32Array(N);
+for (let i = 0; i < N; i++) {
+  atmoPos[i * 3] = 2 * Math.random() - 1; atmoPos[i * 3 + 1] = 2 * Math.random() - 1; atmoPos[i * 3 + 2] = 2 * Math.random() - 1;
+  atmoSizes[i] = CONFIG.atmoSize * (0.4 + Math.random()); atmoSeeds[i] = Math.random();
+}
+const atmoGeo = new THREE.BufferGeometry();
+atmoGeo.setAttribute('position', new THREE.Float32BufferAttribute(atmoPos, 3));
+atmoGeo.setAttribute('size', new THREE.Float32BufferAttribute(atmoSizes, 1));
+atmoGeo.setAttribute('seed', new THREE.Float32BufferAttribute(atmoSeeds, 1));
+
+const atmoMat = new THREE.ShaderMaterial({
+  transparent: true,
+  blending: THREE.AdditiveBlending,
+  depthWrite: false,
+  depthTest: false,
+  uniforms: {
+    uTime: { value: 0 },
+    uColor: { value: hexToVec3(CONFIG.atmoColor) },
+    uRes: { value: new THREE.Vector2(window.innerWidth * window.devicePixelRatio, window.innerHeight * window.devicePixelRatio) }
+  },
+  vertexShader: `
+    attribute float size; attribute float seed; uniform float uTime; uniform vec2 uRes;
+    varying float vA;
+    vec3 warp(vec3 p, float t){ float c=0.9,a=1.9,b=0.02,s=0.05; p*=2.;
+      p.x+=c*sin(s*t+a*p.y)+t*b; p.y+=c*cos(s*t+a*p.x); p.y+=c*sin(s*t+a*p.z)+t*b;
+      p.z+=c*cos(s*t+a*p.y); p.z+=c*sin(s*t+a*p.x)+t*b; p.x+=c*cos(s*t+a*p.z);
+      return cos(p+vec3(1,2,4)); }
+    void main(){
+      vec3 v = position*4.0 + warp(position, uTime)*1.2;
+      vec4 mv = modelViewMatrix * vec4(v, 1.0);
+      float r = length(v); float farF = 1.0 - smoothstep(5.0, 6.5, r); float nearF = smoothstep(0.0, 0.5, -mv.z);
+      vA = farF * nearF;
+      gl_PointSize = size * uRes.y / 900.0 / -mv.z; gl_PointSize = max(gl_PointSize, 1.0);
+      gl_Position = projectionMatrix * mv;
+    }
+  `,
+  fragmentShader: `
+    uniform vec3 uColor; varying float vA;
+    void main(){ vec2 p = gl_PointCoord - 0.5; float l = length(p); if (l > 0.5) discard;
+      float tex = smoothstep(0.5, 0.0, l); gl_FragColor = vec4(uColor * tex, tex * vA * 0.6); }
+  `
+});
+const atmoPoints = new THREE.Points(atmoGeo, atmoMat);
+atmoPoints.frustumCulled = false;
+atmoPoints.layers.enable(LAYERS.ENTIRE_SCENE);
+atmoPoints.onBeforeRender = () => {
+  const t = performance.now() / 1000;
+  atmoMat.uniforms.uTime.value = t * 1.0 * 8.0;
+  atmoPoints.position.copy(camera.position);
+  finalPass.uniforms.iTime.value = t;
+};
+scene.add(atmoPoints);
+
+/* ---- Pointer / hover-driven void (this is the hover effect on the storm) ---- */
+const POINTER = { ndc: new THREE.Vector2(0, 0), world: new THREE.Vector3(), activity: 0, active: false, lastMove: performance.now() };
+window.addEventListener('mousemove', e => {
+  POINTER.ndc.x = (e.clientX / window.innerWidth) * 2 - 1;
+  POINTER.ndc.y = -((e.clientY / window.innerHeight) * 2 - 1);
+  POINTER.active = true; POINTER.lastMove = performance.now();
+}, { passive: true });
+window.addEventListener('mouseout', () => { POINTER.active = false; }, { passive: true });
+
+const _ndc = new THREE.Vector3(), _dir = new THREE.Vector3(), _target = new THREE.Vector3();
+function updatePointer() {
+  _target.set(0, 0, 0);
+  if (POINTER.active) {
+    _ndc.set(POINTER.ndc.x, POINTER.ndc.y, 0.5).unproject(camera);
+    _dir.copy(_ndc).sub(camera.position).normalize();
+    const denom = _dir.z;
+    if (Math.abs(denom) > 1e-4) {
+      const t = -camera.position.z / denom;
+      if (t > 0 && Number.isFinite(t)) _target.copy(camera.position).addScaledVector(_dir, t);
+    }
+  }
+  POINTER.world.lerp(_target, 0.12);
+  const idle = (performance.now() - POINTER.lastMove) / 1000;
+  const want = (POINTER.active && idle < 3) ? 1 : 0;
+  POINTER.activity += (want - POINTER.activity) * 0.06;
+}
+
+/* ---- Scroll (rides the real page height, no artificial scroll spacer) ---- */
+const Lerp = (a, b, t) => a + (b - a) * t;
+const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+let scrollTarget = 0, scrollSmooth = 0, scrollCurrent = 0;
+const mouseSmooth = { x: 0, y: 0 };
+
+function updateScroll() {
+  const max = document.documentElement.scrollHeight - window.innerHeight;
+  scrollTarget = max > 0 ? clamp(window.scrollY / max, 0, 1) : 0;
+}
+window.addEventListener('scroll', updateScroll, { passive: true });
+updateScroll();
+
+/* ---- Storm state/animation ---- */
+const storm = {
+  t0: performance.now() / 1000,
+  appearStart: performance.now(),
+  uniforms,
+  group,
+  render(scroll, m) {
+    const t = performance.now() / 1000;
+    const dt = Math.min(0.05, t - this.t0); this.t0 = t;
+    this.uniforms.uTime.value = t;
+    camera.position.set(m.x * CONFIG.parallax, m.y * CONFIG.parallax, 7 - scroll * CONFIG.scrollDive);
+    camera.lookAt(0, 0, 0);
+    this.group.scale.setScalar(1 + scroll * CONFIG.scrollGrow);
+    const elapsed = performance.now() - this.appearStart;
+    const fade = Math.max(0, Math.min(1, (elapsed - 300) / 1400));
+    this.uniforms.uOpacity.value = fade * activeOpacity;
+    this.uniforms.uBlowUp.value = CONFIG.blowUp;
+    this.uniforms.uCursor.value.copy(POINTER.world);
+    this.uniforms.uActivity.value = POINTER.activity;
+    this.group.rotation.y += dt * (CONFIG.spin + scroll * CONFIG.scrollSpin);
+    this.group.rotation.x += dt * CONFIG.spin * 0.33;
+  }
+};
+
+/* ---- Theme adaptation: swap the storm's palette + scrim when the site toggles light/dark ---- */
+const THEME_PALETTES = {
+  dark: {
+    bg: '#0a0a0c',
+    core: '#3a060c',
+    mid: '#8a0f1b',
+    rim: '#f7f5f1',
+    flameA: '#d81324',
+    flameB: '#f7f5f1',
+    scrim: 'radial-gradient(circle at 32% 45%, rgba(10,10,12,.25), rgba(10,10,12,.5) 55%, rgba(10,10,12,.68) 100%)',
+    mixStrength: 0,     // pure additive — the original look, unchanged
+    opacity: 1.3,
+    brightness: 1.05
+  },
+  light: {
+    bg: '#f2efe9',
+    core: '#e8899a',    // dusty rose
+    mid: '#c81f30',     // deeper, more saturated red (reads clearly on a light bg)
+    rim: '#4a0c14',      // deep maroon
+    flameA: '#d81324',
+    flameB: '#7d0d18',
+    scrim: 'radial-gradient(circle at 32% 45%, rgba(242,239,233,.18), rgba(242,239,233,.4) 55%, rgba(242,239,233,.58) 100%)',
+    mixStrength: 0.85,  // real alpha blend instead of pure addition, so it doesn't wash out to white
+    opacity: 0.95,       // kept moderate on purpose — visible without being bold/heavy
+    brightness: 0.95
+  }
+};
+const scrimEl = document.getElementById('scene-scrim');
+let activeOpacity = CONFIG.opacity;
+
+function applyTheme(theme) {
+  const p = THEME_PALETTES[theme] || THEME_PALETTES.dark;
+  uniforms.uCore.value.copy(hexToVec3(p.core));
+  uniforms.uMid.value.copy(hexToVec3(p.mid));
+  uniforms.uRim.value.copy(hexToVec3(p.rim));
+  uniforms.uBrightness.value = p.brightness;
+  finalPass.uniforms.uBg.value.copy(hexToVec3(p.bg));
+  finalPass.uniforms.uFlameA.value.copy(hexToVec3(p.flameA));
+  finalPass.uniforms.uFlameB.value.copy(hexToVec3(p.flameB));
+  finalPass.uniforms.uMixStrength.value = p.mixStrength;
+  activeOpacity = p.opacity;
+  canvas.style.display = theme === 'dark' ? 'block' : 'none';
+  if (scrimEl) scrimEl.style.background = p.scrim;
+}
+
+function currentTheme() {
+  return document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+}
+applyTheme(currentTheme());
+
+// React whenever script.js flips data-theme (click, or any other trigger).
+new MutationObserver(() => applyTheme(currentTheme()))
+  .observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+function render() {
+  requestAnimationFrame(render);
+  scrollSmooth = Lerp(scrollSmooth, scrollTarget, 0.10);
+  scrollCurrent = Lerp(scrollCurrent, scrollSmooth, 0.06);
+  mouseSmooth.x = Lerp(mouseSmooth.x, POINTER.ndc.x, 0.06);
+  mouseSmooth.y = Lerp(mouseSmooth.y, POINTER.ndc.y, 0.06);
+  updatePointer();
+  storm.render(scrollCurrent, mouseSmooth);
+  if (currentTheme() === 'dark') {
+    camera.layers.set(LAYERS.TORUS_SCENE); torusComposer.render();
+    camera.layers.set(LAYERS.BLOOM_SCENE); bloomComposer.render();
+    camera.layers.set(LAYERS.ENTIRE_SCENE); finalComposer.render();
+  }
+}
+render();
+
+window.addEventListener('resize', () => {
+  const w = window.innerWidth, h = window.innerHeight;
+  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setSize(w, h);
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+  torusComposer.setSize(w, h);
+  bloomComposer.setSize(w, h);
+  finalComposer.setSize(w, h);
+  atmoMat.uniforms.uRes.value.set(w * window.devicePixelRatio, h * window.devicePixelRatio);
+  updateScroll();
+});
+</script>
+
+<!-- ============ LIGHT-MODE BACKGROUND: perspective grid + node network ============ -->
+<script>
+(function () {
+  "use strict";
+
+  var canvas = document.getElementById("sceneLight");
+  if (!canvas) return;
+  var ctx = canvas.getContext("2d");
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  var W, H, DPR;
+  function resize() {
+    DPR = Math.min(window.devicePixelRatio || 1, 2);
+    W = window.innerWidth;
+    H = window.innerHeight;
+    canvas.width = W * DPR;
+    canvas.height = H * DPR;
+    canvas.style.width = W + "px";
+    canvas.style.height = H + "px";
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  }
+  window.addEventListener("resize", resize);
+  resize();
+
+  /* ---- perspective floor grid ---- */
+  var COLS = 20, ROWS = 16, SPACING = 100;
+  var gridPoints = [];
+  for (var r = 0; r < ROWS; r++) {
+    for (var c = 0; c < COLS; c++) {
+      gridPoints.push({ x: (c - COLS / 2) * SPACING, y: 180, z: r * SPACING });
+    }
+  }
+
+  /* ---- floating node network above the grid ---- */
+  var NODE_COUNT = 46;
+  var nodes = [];
+  for (var i = 0; i < NODE_COUNT; i++) {
+    var baseY = -Math.random() * 320 - 20;
+    nodes.push({
+      x: (Math.random() - 0.5) * 1900,
+      y: baseY,
+      baseY: baseY,
+      z: Math.random() * ROWS * SPACING,
+      phase: Math.random() * Math.PI * 2,
+      speed: 0.35 + Math.random() * 0.55,
+      r: 1.6 + Math.random() * 2.2
+    });
+  }
+
+  var links = [];
+  for (var a = 0; a < nodes.length; a++) {
+    for (var b = a + 1; b < nodes.length; b++) {
+      var dx = nodes[a].x - nodes[b].x, dz = nodes[a].z - nodes[b].z;
+      if (Math.sqrt(dx * dx + dz * dz) < 280 && Math.random() < 0.28) links.push([a, b]);
+    }
+  }
+
+  var rotX = 0.34, rotY = 0, targetRotX = 0.34, targetRotY = 0;
+  var shiftX = 0, targetShiftX = 0;
+  var hovering = false;
+  var mouse = { x: -9999, y: -9999 };
+
+  function onMove(clientX, clientY) {
+    var px = clientX / window.innerWidth - 0.5;
+    var py = clientY / window.innerHeight - 0.5;
+    targetRotY = px * 0.45;
+    targetRotX = 0.34 - py * 0.26;
+    targetShiftX = px * 50;
+    mouse.x = clientX;
+    mouse.y = clientY;
+    hovering = true;
+  }
+  function onLeave() {
+    hovering = false;
+    targetRotX = 0.34;
+    targetRotY = 0;
+    targetShiftX = 0;
+  }
+  window.addEventListener("mousemove", function (e) { onMove(e.clientX, e.clientY); }, { passive: true });
+  window.addEventListener("mouseout", function (e) { if (!e.relatedTarget) onLeave(); }, { passive: true });
+  window.addEventListener("touchmove", function (e) {
+    if (e.touches && e.touches[0]) onMove(e.touches[0].clientX, e.touches[0].clientY);
+  }, { passive: true });
+  window.addEventListener("touchend", onLeave, { passive: true });
+
+  var FOCAL = 560;
+  function project(p, cx, cy) {
+    var cosX = Math.cos(rotX), sinX = Math.sin(rotX);
+    var y1 = p.y * cosX - p.z * sinX;
+    var z1 = p.y * sinX + p.z * cosX;
+
+    var cosY = Math.cos(rotY), sinY = Math.sin(rotY);
+    var x1 = p.x * cosY + z1 * sinY;
+    var z2 = -p.x * sinY + z1 * cosY;
+
+    var z = z2 + 760;
+    var scale = FOCAL / z;
+    return { x: cx + (x1 + shiftX) * scale, y: cy + y1 * scale, scale: scale };
+  }
+
+  function draw(t) {
+    ctx.clearRect(0, 0, W, H);
+    var cx = W / 2, cy = H * 0.46;
+
+    ctx.lineWidth = 1;
+    for (var r = 0; r < ROWS; r++) {
+      ctx.beginPath();
+      for (var c = 0; c < COLS; c++) {
+        var sp = project(gridPoints[r * COLS + c], cx, cy);
+        if (c === 0) ctx.moveTo(sp.x, sp.y); else ctx.lineTo(sp.x, sp.y);
+      }
+      ctx.strokeStyle = "rgba(216,19,36," + (0.14 * (1 - r / ROWS)) + ")";
+      ctx.stroke();
+    }
+    for (var c2 = 0; c2 < COLS; c2++) {
+      ctx.beginPath();
+      for (var r2 = 0; r2 < ROWS; r2++) {
+        var sp2 = project(gridPoints[r2 * COLS + c2], cx, cy);
+        if (r2 === 0) ctx.moveTo(sp2.x, sp2.y); else ctx.lineTo(sp2.x, sp2.y);
+      }
+      ctx.strokeStyle = "rgba(19,17,20,0.06)";
+      ctx.stroke();
+    }
+
+    links.forEach(function (pair) {
+      var s1 = project(nodes[pair[0]], cx, cy), s2 = project(nodes[pair[1]], cx, cy);
+      ctx.beginPath();
+      ctx.moveTo(s1.x, s1.y);
+      ctx.lineTo(s2.x, s2.y);
+      ctx.strokeStyle = "rgba(19,17,20,0.05)";
+      ctx.stroke();
+    });
+
+    nodes.forEach(function (n, idx) {
+      if (t !== null) n.y = n.baseY + Math.sin(t * n.speed + n.phase) * 11;
+      var sp = project(n, cx, cy);
+      if (sp.scale <= 0) return;
+      var radius = n.r * sp.scale * 1.4;
+
+      var glow = 0;
+      if (hovering) {
+        var dx = sp.x - mouse.x, dy = sp.y - mouse.y;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        glow = Math.max(0, 1 - dist / 170);
+      }
+
+      var isRed = idx % 3 !== 0;
+      var baseAlpha = Math.min(0.85, sp.scale * 0.85);
+
+      if (glow > 0.05) {
+        ctx.beginPath();
+        ctx.arc(sp.x, sp.y, radius * 4, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(216,19,36," + glow * 0.08 + ")";
+        ctx.fill();
+      }
+
+      ctx.beginPath();
+      ctx.arc(sp.x, sp.y, radius + glow * 3, 0, Math.PI * 2);
+      ctx.fillStyle = isRed
+        ? "rgba(216,19,36," + (baseAlpha * 0.75 + glow * 0.25) + ")"
+        : "rgba(19,17,20," + (baseAlpha * 0.45 + glow * 0.2) + ")";
+      ctx.fill();
+    });
+  }
+
+  /* ---- Only run while light mode is active: paused/hidden the rest of the time ---- */
+  var running = false, raf = null, t0 = 0;
+  function loop() {
+    if (!running) return;
+    t0 += 0.016;
+    rotX += (targetRotX - rotX) * 0.06;
+    rotY += (targetRotY - rotY) * 0.06;
+    shiftX += (targetShiftX - shiftX) * 0.06;
+    draw(t0);
+    raf = requestAnimationFrame(loop);
+  }
+  function start() {
+    if (running) return;
+    running = true;
+    if (reduceMotion) { draw(null); } else { raf = requestAnimationFrame(loop); }
+  }
+  function stop() {
+    running = false;
+    if (raf) cancelAnimationFrame(raf);
+  }
+
+  function syncTheme() {
+    var light = document.documentElement.getAttribute("data-theme") === "light";
+    canvas.style.display = light ? "block" : "none";
+    if (light) start(); else stop();
+  }
+  syncTheme();
+  new MutationObserver(syncTheme).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+})();
+</script>
+   <script src="chatbot.js"></script>
+</body>
+</html>
